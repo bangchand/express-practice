@@ -1,0 +1,73 @@
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore node_modules and npm log files
+node_modules/
+npm-debug.log*
+
+# Ignore environment variable files
+.env
+.env.local
+.env.*.local
+
+# Ignore build output
+/dist
+/build
+/out
+
+# Ignore dependency directories and package manager files
+vendor/
+composer.lock
+yarn.lock
+pnpm-lock.yaml
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.cache
+*.swp
+*.swo
+*.bak
+
+# Ignore compiled files and cache
+*.pyc
+*.class
+*.o
+*.out
+*.exe
+__pycache__/
+
+# Ignore images or other media
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Ignore specific framework files (add or remove as needed)
+# Laravel
+/public/storage
+/storage/*.key
+/storage/logs/*.log
+/bootstrap/cache/*.php
+
+# Python virtual environment
+venv/
+.env/
+
+# Ignore archive files
+*.zip
+*.tar.gz
+*.rar
+
+# Ignore Git-specific files
+.git/
+
+# Ignore macOS files
+*.DS_Store

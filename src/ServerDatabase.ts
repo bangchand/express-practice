@@ -1,5 +1,6 @@
 import express, { Request, Response } from "express";
 import conn from "./Connection.ts";
+import ContactRoutes from "./routes/ContactRoutes.ts";
 
 const app = express();
 const port = 3000;
@@ -17,9 +18,7 @@ conn
   });
 
 // API
-app.get("/", (req, res) => {
-  res.json("connected!");
-});
+app.use(ContactRoutes);
 
 // Server Port Running Info
 app.listen(port, () => {
