@@ -1,8 +1,17 @@
-import { Sequelize } from "sequelize";
+import { Dialect, Sequelize } from "sequelize";
+import config from "./config/config.json";
 
-const conn = new Sequelize("express-practice", "postgres", "d3v99313", {
-  host: "localhost",
-  dialect: "postgres",
-});
+const env = process.env.NODE_ENV as string;
+const dbConfig = config[env];
+
+const conn = new Sequelize(
+  dbConfig.database,
+  dbConfig.username,
+  dbConfig.password,
+  {
+    host: dbConfig.host,
+    dialect: dbConfig.dialect as Dialect,
+  }
+);
 
 export default conn;

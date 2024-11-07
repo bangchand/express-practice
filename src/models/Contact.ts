@@ -2,7 +2,7 @@ import { DataTypes, Model } from "sequelize";
 import conn from "../Connection.ts";
 
 interface ContactAttribute {
-  id: number;
+  id?: number;
   name: string;
   gender: string;
 }

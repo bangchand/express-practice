@@ -12,7 +12,7 @@
     "typescript": "^5.6.3"
   },
   "scripts": {
-    "dev": "bun run ./Server.ts",
-    "dev-db": "bun run ./ServerDatabase.ts"
+    "dev": "bun run ./src/Server.ts",
+    "dev-db": "bun run ./src/ServerDatabase.ts"
   }
 }
