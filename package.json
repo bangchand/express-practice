@@ -13,6 +13,7 @@
   },
   "scripts": {
     "dev": "bun run ./src/Server.ts",
-    "dev-db": "bun run ./src/ServerDatabase.ts"
+    "dev-db": "bun run ./src/ServerDatabase.ts",
+    "dev-cl": "bun run ./src/ServerCloud.ts"
   }
 }
