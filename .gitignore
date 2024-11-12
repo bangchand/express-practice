@@ -71,3 +71,4 @@ venv/
 
 # Ignore macOS files
 *.DS_Store
+.vercel
