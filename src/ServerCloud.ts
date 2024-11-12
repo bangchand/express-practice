@@ -1,4 +1,4 @@
-import express from "express";
+import express, { Request, Response } from "express";
 import conn from "./ConnectionCloud";
 import TodoRoutes from "./routes/TodoRoutes.ts";
 import RecordRoutes from "./routes/RecordRoutes.ts";
@@ -16,6 +16,10 @@ conn
   .catch(() => {
     console.log("connection failed to database!");
   });
+
+app.get("/", (req: Request, res: Response) => {
+  res.json("server is running");
+});
 
 app.use(TodoRoutes);
 app.use(RecordRoutes);
