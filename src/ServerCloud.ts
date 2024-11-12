@@ -1,6 +1,7 @@
 import express from "express";
 import conn from "./ConnectionCloud";
 import TodoRoutes from "./routes/TodoRoutes.ts";
+import RecordRoutes from "./routes/RecordRoutes.ts";
 
 const app = express();
 const port = 3000;
@@ -17,6 +18,7 @@ conn
   });
 
 app.use(TodoRoutes);
+app.use(RecordRoutes);
 
 app.listen(port, () => {
   console.log(`server runnning on http://localhost:${port}`);
