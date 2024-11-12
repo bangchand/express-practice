@@ -4,6 +4,7 @@
     "@types/node": "^22.8.4",
     "@types/pg": "^8.11.10",
     "@types/sequelize": "^4.28.20",
+    "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "pg": "^8.13.1",
     "sequelize": "^6.37.5",
@@ -14,6 +15,8 @@
   "scripts": {
     "dev": "bun run ./src/Server.ts",
     "dev-db": "bun run ./src/ServerDatabase.ts",
-    "dev-cl": "bun run ./src/ServerCloud.ts"
+    "dev-cl": "bun run ./src/ServerCloud.ts",
+    "build": "tsc",
+    "start": "node dist/ServerCloud.js"
   }
 }

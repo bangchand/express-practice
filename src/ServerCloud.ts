@@ -1,7 +1,7 @@
 import express, { Request, Response } from "express";
 import conn from "./ConnectionCloud";
-import TodoRoutes from "./routes/TodoRoutes.ts";
-import RecordRoutes from "./routes/RecordRoutes.ts";
+import TodoRoutes from "./routes/TodoRoutes";
+import RecordRoutes from "./routes/RecordRoutes";
 
 const app = express();
 const port = 3000;

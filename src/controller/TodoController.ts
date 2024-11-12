@@ -7,7 +7,6 @@ export const getAllTodo = async (
 ): Promise<void> => {
   try {
     const todos = await Todo.findAll();
-    console.log(todos);
     res.status(200).json({ data: todos, message: "success" });
   } catch (error) {
     console.log(error);

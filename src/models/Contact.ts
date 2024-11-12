@@ -1,5 +1,5 @@
 import { DataTypes, Model } from "sequelize";
-import conn from "../Connection.ts";
+import conn from "../Connection";
 
 interface ContactAttribute {
   id?: number;

@@ -1,6 +1,6 @@
 import express, { Request, Response } from "express";
-import conn from "./Connection.ts";
-import ContactRoutes from "./routes/ContactRoutes.ts";
+import conn from "./Connection";
+import ContactRoutes from "./routes/ContactRoutes";
 
 const app = express();
 const port = 3000;
