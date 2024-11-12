@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "dist/ServerCloud.js",
+      "src": "./index.ts",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/dist/ServerCloud.js"
+      "dest": "/"
     }
   ]
 }
