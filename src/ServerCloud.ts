@@ -27,3 +27,5 @@ app.use(RecordRoutes);
 app.listen(port, () => {
   console.log(`server runnning on http://localhost:${port}`);
 });
+
+export default app;
